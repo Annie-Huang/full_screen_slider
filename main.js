@@ -44,8 +44,22 @@ const prevSlide = () => {
 };
 
 // Button events
-next.addEventListener('click', e => nextSlide());
-prev.addEventListener('click', e => prevSlide());
+next.addEventListener('click', e => {
+    nextSlide();
+    // This will make sure it wait for 5s again after we clicks the next button
+    // because we clear the interval and add it back in again.
+    if (auto) {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, intervalTime);
+    }
+});
+prev.addEventListener('click', e => {
+    prevSlide();
+    if (auto) {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(prevSlide, intervalTime);
+    }
+});
 
 // Auto slide
 if (auto) {

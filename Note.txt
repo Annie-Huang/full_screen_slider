@@ -4,3 +4,5 @@ https://codepen.io/bradtraversy/pen/oVPBaa
 https://github.com/Annie-Huang/full_screen_slider
 
 https://fontawesome.com/
+https://fonts.google.com/
+https://fonts.google.com/?selection.family=Roboto

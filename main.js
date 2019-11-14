@@ -42,3 +42,9 @@ const prevSlide = () => {
     // I don't think the follow part is required. A lot of the comment in the video said it was not required.
     setTimeout(() => current.classList.remove('current'), 200);
 };
+
+// Button events
+next.addEventListener('click', e => nextSlide());
+prev.addEventListener('click', e => prevSlide());
+
+

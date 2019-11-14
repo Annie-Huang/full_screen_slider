@@ -55,6 +55,29 @@ body {
     transition: all 0.7s ease-in-out 0.3s; /* The last 0.3s is the delay */
 }
 
+.buttons button#next {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+}
+.buttons button#prev {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+}
+.buttons button {
+    border: 2px solid #fff;
+    background-color: transparent; /* Interesting, I didn't know you can set background color as transparents. */
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+}
+.buttons button:hover {
+    background-color: #fff;
+    color: #333;
+}
 
 /* Backgorund Images */
 

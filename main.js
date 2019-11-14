@@ -21,7 +21,7 @@ const nextSlide = () => {
     }
 
     // I don't think the follow part is required. A lot of the comment in the video said it was not required.
-    setTimeout(() => current.classList.remove('current'), 200);
+    // setTimeout(() => current.classList.remove('current'), 200);
 };
 
 const prevSlide = () => {
@@ -40,7 +40,7 @@ const prevSlide = () => {
     }
 
     // I don't think the follow part is required. A lot of the comment in the video said it was not required.
-    setTimeout(() => current.classList.remove('current'), 200);
+    // setTimeout(() => current.classList.remove('current'), 200);
 };
 
 // Button events
